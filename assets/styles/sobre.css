@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #161a30;
+  color: #f0ece5;
+  font-family: Arial, sans-serif;
+}
+header {
+  width: 100%;
+}
+
+.Navbar {
+  background-color: #31304d;
+  display: flex;
+  padding: 0px;
+  font-family: sans-serif;
+  gap: 5rem;
+  justify-content: flex-start;
+  color: #fff;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.Navbar img {
+  width: 100px;
+  height: 100px;
+}
+.Navbar__Link {
+  padding-right: 8px;
+  margin: 0px 20px;
+}
+
+.Navbar__Link a {
+  padding: 10px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 23px;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin-left: auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 1085px) {
+  .Navbar {
+    gap: 3rem;
+  }
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .Navbar__Items {
+    display: none;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #f0ece5;
+  text-decoration: none;
+}
+
+
+/* Estilos globais */
+
+.sobremimt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.sobremimt img {
+  height: 248px;
+  border-radius: 10px;
+}
+
+.sobremimt hr{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding: 2px;
+  background: linear-gradient(to right,  #b6bbc4, #31304d 100%);
+  border: none;
+}
+
+.textoref,
+.hobbies {
+  text-align: center;
+  justify-content: center;
+  margin: auto 2rem;
+}
+
+.movie img {
+  width: 200px;
+  margin: 17px;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #fff;
+}
+
+.hobbies h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 780px) {
+  .sobremimt {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hobbies {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
